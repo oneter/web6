@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Калькулятор </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="kalkulatir.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid page" style="background-color: #5f6943;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-5 offset-5 col-md-4 offset-md-1 order-2">
+                        <div class="h-100 py-3">
+                            <div id="line">
+                                <p class="text-center">Товары для мальчиков</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 col-md-3 order-1">
+                        <div class="h-100 py-3">
+                            <div id="logo">
+                                <img src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614587652_28-p-malchik-na-belom-fone-kartinka-36.png"
+                                    Width="100" Height="100" alt="name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class=" row mt-3 order-2 order-md-3" style="background-color: #acb78e;">
+            <div class="col-12 col-md-6">
+                Введите кол-во товара:
+                <p><input type="text" id="num" placeholder="Введите..." onkeypress="cifra()"></p>
+                Выберете тип товара:
+                <form>
+                    <select name="prodType">
+                        <option value="1">Мягкие игрушки</option>
+                        <option value="2">Транспорт</option>
+                        <option value="3">Солдатики</option>
+                    </select>
+                    <div id="radios">
+                        <label><input type="radio" checked="checked" name="prodOptions" value="option1">
+                            Скейтборд</label>
+                        <label><input type="radio" name="prodOptions" value="option2"> Самокат </label>
+                        <label><input type="radio" name="prodOptions" value="option3"> Велосипед </label>
+                    </div>
+                    <div id="checkboxes">
+                        <label><input type="checkbox" name="prop1"> С техникой</label>
+                        <label><input type="checkbox" name="prop2"> С декорациями</label>
+                    </div>
+                </form>
+                <div id="prodPrice"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid page mt-3" style="background-color: #5f6943;">
+        <footer class="footer" id="foot">
+            <h5> © Дудченко Александр 2022 </h5>
+        </footer>
+    </div>
+</body>
+
+</html>
